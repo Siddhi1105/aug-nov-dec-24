@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <div>
+        <h1> Forms in HTML</h1>
+  
+        <!-- 
+        -Form is a container for sifferent types of input elements 
+        such as text fields,checkboxes,radio button  
+        -->
+
+        <form action="Submitted.html" novalidate>
+            <label for="name">Name<span style="color:red">*</span>:</label>
+            <input type="text" id="name" placeholder="Enter Your Name:" required>
+            <br><br>
+
+            <label for="number">Ph-number<span style="color:red">*</span>:</label>
+            <input type="number " id="number" placeholder="Enter Your Number:" required>
+            <br><br>
+
+            <label for="email">Email<span style="color:red">*</span>:</label>
+            <input type="email " id="email" placeholder="Enter Your email:" required>
+            <br><br>
+            
+            <label for="date">DOB<span style="color:red">*</span>:</label>
+            <input type="date" id="date" placeholder="Enter Your DOB:" required>
+            <br><br>
+
+            <label for="url">URL:</label>
+            <input type="url" id="url" placeholder="Enter Your url:" >
+            <br><br>
+
+            <label for="file">File:</label>
+            <input type="file" id="file" required multiple >
+            <br><br>
+
+            <label for="color">Color:</label>
+            <input type="color" id="color">
+            <br><br>
+
+            <div>
+           <div>Gender:</div>
+
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" required>
+
+                <label for="male">Male</label>
+                <input type="radio" id="Male" name="gender" required>
+
+                <label for="others">Others</label>
+                <input type="radio" id="other" name="gender" required>
+
+            </div>
+
+            <!-- Checkboxes -->
+            <div><label for="">
+                Languages
+            </label>
+
+                <label for="eng">English
+                <input type="checkbox" id="eng" name="Language" >
+
+                <label for="hindi">Hindi
+                <input type="checkbox" id="hindi" name="Language" checked>
+
+                <label for="marathi">Marathi
+                <input type="checkbox" id="marathi" name="Language">
+
+                <!-- Select -->
+
+                <div>
+                    <label for="city">Select your location:</label>
+                    <select id="city">
+                        <option value="" selected disabled>Select City</option>
+                        <option value="Patna">Patna</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Surat">Surat</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+
+            </div>
+            <br><br>
+
+            <label for="submit"></label>
+            <input type="submit" id="submit" >
+           
+
+
+
+        </form>
+
+    </form>
+    </div>
+    
+</body>
+</html>
